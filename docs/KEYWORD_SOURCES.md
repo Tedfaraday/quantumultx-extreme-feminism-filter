@@ -2,7 +2,7 @@
 
 整理日期：2026-08-23
 
-这份词库用于用户自己的小红书信息流过滤。它只表示“该文字在公开材料中出现过，且用户不想在信息流中看到”，不对截图真实性、发帖者身份、仓库作者的结论或任何群体作事实判断。
+这份词库用于用户自己的小红书与微博信息流过滤。它只表示“该文字在公开材料中出现过，且用户不想在信息流中看到”，不对截图真实性、发帖者身份、仓库作者的结论或任何群体作事实判断。
 
 词汇候选来源索引：
 
@@ -12,7 +12,7 @@
 - [person-without-name/AntiChinaFeminist](https://github.com/person-without-name/AntiChinaFeminist)
 - [FemRun/FemRun](https://github.com/FemRun/FemRun)，包括公开 Issues
 
-Quantumult X 的配置、重写和远程分发形式另参考 [ddgksf2013/ddgksf2013](https://github.com/ddgksf2013/ddgksf2013)；它属于技术参考，不列作词汇来源。更完整的来源分类和权利说明见 [`../SOURCES.md`](../SOURCES.md)。
+Quantumult X 的配置、重写和远程分发形式另参考 [ddgksf2013/ddgksf2013](https://github.com/ddgksf2013/ddgksf2013)；微博介面与 JSON 包装的技术参考另列于 [`../SOURCES.md`](../SOURCES.md)。这些都不列作词汇来源。
 
 ## 分层方式
 

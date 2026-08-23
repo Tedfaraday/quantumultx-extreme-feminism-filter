@@ -2,7 +2,11 @@
 
 基於 Quantumult X 的極端女權言論關鍵詞屏蔽工具，用於減少中文網路資訊流中極端女權、性別仇恨、男性貶損及暴力／滅絕性表達對使用者的影響。工具只在本機檢查回應內明確存在的貼文標題、正文／簡介與標籤；命中已啟用關鍵詞時，只從該次回應中移除相應貼文。
 
+本專案所稱「極端女權言論」，僅指包含性別仇恨、人格貶損或暴力／滅絕表達的具體文字，不指向女性、女權主義者或任何真實個人、帳號與組織。詞彙被收錄只代表它是過濾候選，不構成對任何人的身分、立場或行為判定。
+
 A Quantumult X keyword filter designed to reduce exposure to extreme feminist speech, gender-based hostility, anti-male derogatory language, and violent or eliminationist expressions in Chinese-language content feeds. It examines only explicit text fields in responses—such as post titles, bodies/descriptions, and tags—and removes matching posts from that response locally.
+
+In this project, “extreme feminist speech” refers only to specific text containing gender-based hostility, personal degradation, or violent/eliminationist expressions. It does not designate women, feminists, or any real person, account, or organization. Inclusion in the lexicon is not a factual judgment about anyone's identity, beliefs, or conduct.
 
 > [!IMPORTANT]
 > 關鍵詞命中不等於立場判斷。引用、批評、反駁、新聞轉述、諷刺或學術討論同樣可能命中，請預期存在誤傷。本專案不判斷作者身分或真實立場，不建立個人名單，也不檢查帳號、使用者名稱或互動資料。
@@ -109,6 +113,12 @@ Enable Rewrite and MitM in Quantumult X, fully close and reopen Xiaohongshu, and
 Quantumult X 的設定、重寫與遠端分發形式另參考 [`ddgksf2013/ddgksf2013`](https://github.com/ddgksf2013/ddgksf2013)；該倉庫列為技術參考，不列作本專案詞彙來源。
 
 列出來源只表示相關字串曾在公開材料中出現，不代表來源作者認可本專案，也不代表本專案已取得來源文件的再發布授權。逐倉庫審查範圍與代表性定位見 [`docs/KEYWORD_SOURCES.md`](docs/KEYWORD_SOURCES.md)，完整來源索引與權利說明見 [`SOURCES.md`](SOURCES.md)。
+
+## 來源糾錯與刪除請求 / Source correction and removal requests
+
+如發現來源標註錯誤、誤收個人資料、未經核實的個人指控，或認為某項內容涉及你的合法權利，請使用[來源糾錯／刪除請求模板](https://github.com/Tedfaraday/quantumultx-extreme-feminism-filter/issues/new?template=source-correction-or-removal.md)提出 Issue。請只提供定位問題所需的最少資訊，不要公開提交身分證件、聯絡方式、帳號憑證、原始私密資料或未脫敏回應。
+
+For source corrections or removal requests, use the linked Issue template and provide only the minimum information needed to locate the material. Do not post identity documents, contact details, credentials, private source material, or unredacted app responses.
 
 ## 隱私與資料處理 / Privacy and data handling
 

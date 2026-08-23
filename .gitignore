@@ -1,0 +1,20 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and local scratch files
+*.log
+*.tmp
+*.bak
+
+# Local test output and dependency folders
+coverage/
+node_modules/
+

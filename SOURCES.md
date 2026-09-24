@@ -9,6 +9,11 @@
 | [zmqcherish/proxy-script](https://github.com/zmqcherish/proxy-script) | 微博主要 API 主機與卡片式回應結構的交叉核對 |
 | [Drelf2018/exp](https://github.com/Drelf2018/exp) | 微博 JSON 中 `text`、`text_raw`、`title.text` 與 `retweeted_status` 欄位的解析器交叉核對 |
 | [berbai/weibo](https://github.com/berbai/weibo) | 微博正文、轉發與長文 `longTextContent` 欄位的解析器交叉核對 |
+| [Reddit Engineering: The Five Unsolved Problems of GraphQL](https://www.reddit.com/r/RedditEng/comments/1mtp1u8/the_five_unsolved_problems_of_graphql/) | Reddit 官方工程團隊對行動 App 使用 GraphQL 的說明 |
+| [fmz200/wool_scripts 的 Reddit 規則](https://github.com/fmz200/wool_scripts/blob/main/QuantumultX/rewrite/split/partR/Reddit.snippet) | Quantumult X 中 `gql-fed.reddit.com` 主機及回應腳本形式的交叉核對；未複製其去廣告程式碼 |
+| [srcreigh 的 Reddit iOS GraphQL 技術樣本](https://gist.github.com/srcreigh/2bc8687aace702698d4b8b0b51637bc5) | Home、Subreddit、Popular、News SDUI 操作與 `elements.edges` 位置的交叉核對 |
+| [maor2030/Reddit-Mobile-Post-Scraper](https://github.com/maor2030/Reddit-Mobile-Post-Scraper/blob/main/scraper.py) | `SubredditFeedSdui` 的 `CellGroup`、`TitleCell.title` 欄位交叉核對 |
+| [KhoalaS/Breadit 的 SubredditFeedSdui 查詢](https://github.com/KhoalaS/Breadit/blob/main/app/src/main/graphql/com/khoalas/breadit/SubredditFeedSdui.graphql) | `PreviewTextCell.text`、`FlairCell.flair.text` 及有限巢狀卡片欄位的交叉核對 |
 | [keyzf/Block-misuse-of-feminist-terminology](https://github.com/keyzf/Block-misuse-of-feminist-terminology) | 公開詞彙與用語線索 |
 | [ChinaFeminist/ChinaFeminist](https://github.com/ChinaFeminist/ChinaFeminist) | 公開詞彙與用語線索 |
 | [boxresskiller/boxressdata](https://github.com/boxresskiller/boxressdata) | 公開詞彙與用語線索 |
@@ -24,4 +29,4 @@
 - 詞彙清單是為本機過濾與維護而整理的短詞、短語索引；它不是來源文章的鏡像，也不表示對任何詞義、人物或事件作出事實判定。
 - 本專案不是上述任一儲存庫的 Fork。除非另有明確標示，原創程式碼均為獨立實作。
 
-最後查閱日期：2026-08-24。
+最後查閱日期：2026-09-24。

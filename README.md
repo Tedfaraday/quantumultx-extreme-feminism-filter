@@ -271,6 +271,15 @@ SOURCES.md
 
 Quantumult X 對正文改寫可能存在回應大小限制；特別大的資訊流回應可能不會進入腳本。
 
+## 作者與貢獻者 / Authors and contributors
+
+- [Tedfaraday](https://github.com/Tedfaraday)：專案作者與維護者，負責需求、詞庫取捨、審核及發佈。
+- OpenAI Codex（AI 輔助開發）：協助編寫平台過濾腳本、回歸測試、共享詞庫與自動建置流程，以及專案文件。
+
+此署名記錄 AI 輔助貢獻，不代表 OpenAI 官方參與、贊助或認可本專案；既有版權、授權與第三方詞彙來源標註不變。
+
+Tedfaraday is the project author and maintainer. OpenAI Codex is credited for AI-assisted development of scripts, tests, the shared lexicon build workflow, and documentation. This acknowledgement does not imply official OpenAI involvement, sponsorship, or endorsement, and does not change existing copyright, licensing, or source attribution.
+
 ## 授權與來源
 
 本倉庫的原創程式碼授權見 [`LICENSE-CODE`](LICENSE-CODE)。公開材料只作詞彙樣本與技術參考；第三方內容、商標和各平台名稱仍屬其各自權利人。本專案不複製來源倉庫的文章、截圖、影音或個人資料，詳見 [`DATA_NOTICE.md`](DATA_NOTICE.md) 與 [`SOURCES.md`](SOURCES.md)。

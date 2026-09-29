@@ -1,0 +1,58 @@
+name: Build shared lexicon
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lexicon-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate and generate from canonical data
+        run: node tools/build.js
+      - name: Verify generated output and all platform regressions
+        run: node tools/test.js
+
+  publish-generated:
+    needs: validate
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build and test the latest approved main branch
+        run: |
+          node tools/build.js
+          node tools/test.js
+      - name: Commit only generated artifacts if changed
+        run: |
+          git add -- lexicon/core.txt lexicon/broad.txt lexicon/review-all.txt lexicon/manifest.json Scripts/Xiaohongshu/xhs-keyword-filter.js Scripts/Weibo/weibo-keyword-filter.js Scripts/Reddit/reddit-keyword-filter.js QuantumultX/xhs-keyword-filter.conf QuantumultX/weibo-keyword-filter.conf QuantumultX/reddit-keyword-filter.conf QuantumultX/pinned/v0.3.0/xhs-keyword-filter.conf QuantumultX/pinned/v0.3.0/weibo-keyword-filter.conf QuantumultX/pinned/v0.3.0/reddit-keyword-filter.conf
+          if git diff --cached --quiet; then
+            echo "Generated artifacts already up to date."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'build: synchronize shared lexicon artifacts'
+          git push origin HEAD:main

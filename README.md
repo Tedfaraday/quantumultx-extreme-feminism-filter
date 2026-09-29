@@ -54,6 +54,18 @@ https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter
 
 `update-interval=86400` asks Quantumult X to check for updates approximately every 24 hours. You can also refresh the resource manually.
 
+以上網址是**滾動更新入口**。CONF 及三個平台腳本均跟隨 `main`；生成時會把腳本內容檢查碼加入網址，詞庫或適配器有變更時引用也一起變更。手機需成功下載更新的 CONF 和腳本才會取得新詞庫；若仍使用舊詞庫，請手動更新重寫資源及相關腳本快取。這是更新設計，尚未在所有圈X版本上真機驗證，不保證即時生效。
+
+如需**固定版本、不跟隨新詞**，可改用以下 v0.3.0 快照入口，腳本均指向已發布的 `v0.3.0` tag：
+
+```text
+https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/QuantumultX/pinned/v0.3.0/xhs-keyword-filter.conf
+https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/QuantumultX/pinned/v0.3.0/weibo-keyword-filter.conf
+https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/QuantumultX/pinned/v0.3.0/reddit-keyword-filter.conf
+```
+
+同一平台只啟用滾動或固定其中一種，避免腳本互相覆蓋。舊 Release tag 內容不會因本次調整而被改寫。Release 是版本快照，不是手機自動更新觸發器。
+
 ### 2. 設定 MitM / Configure MitM
 
 將以下網域合併到主設定檔既有的 `[mitm]` `hostname` 中；**不要覆蓋原有網域**：
@@ -104,7 +116,7 @@ Reddit 適配器只處理 `gql-fed.reddit.com/` 上指定的 SDUI 資訊流操�
 
 短詞強過濾層目前預設開啟。若正常內容被過濾太多，可在對應平台的腳本設定區將 `includeBroadKeywords` 改為 `false`；核心詞組仍會生效。標籤匹配也可透過 `matchTags` 開關停用。
 
-三個適配器目前各自內嵌同一份兩層詞庫，以維持單檔遠端腳本相容性。自行修改詞庫時請同步更新三份腳本；回歸測試會檢查詞庫是否一致。
+三個適配器的詞庫統一從 [`lexicon/keywords.json`](lexicon/keywords.json) 生成。只需維護這一份來源資料，GitHub Actions 會在已審核的更新進入 `main` 後生成三份單檔腳本及共享 TXT。腳本仍在本機使用內嵌詞庫，不會每次讀帖都下載詞庫；資料不會回傳。平台邏輯請改 `src/adapters/`，不要手改生成的 `Scripts/`。
 
 匹配採用規範化後的字串包含判斷，而不是分詞、語意分類或立場辨識。因此：
 
@@ -113,7 +125,21 @@ Reddit 適配器只處理 `gql-fed.reddit.com/` 上指定的 SDUI 資訊流操�
 - 變形字、諧音、插入符號或平台欄位變更可能造成漏過；
 - App 更新介面、改用二進位或加密回應後，可能需要重新適配。
 
-詞庫來源、分層、排除項與審查方式詳見 [`docs/KEYWORD_SOURCES.md`](docs/KEYWORD_SOURCES.md)。不考慮誤傷的維護副本位於 [`docs/keywords-full-review.md`](docs/keywords-full-review.md) 與 [`docs/keywords-full-review.txt`](docs/keywords-full-review.txt)；它們用於追蹤網路詞彙演化，不代表所有條目都已在腳本中啟用。
+詞庫來源、分層、排除項與審查方式詳見 [`docs/KEYWORD_SOURCES.md`](docs/KEYWORD_SOURCES.md)。最新不考慮誤傷的候選匯出為 [`lexicon/review-all.txt`](lexicon/review-all.txt)；原有 [`docs/keywords-full-review.md`](docs/keywords-full-review.md) 與 TXT 保留作歷史審閱副本，不再作更新入口。全量候選不代表全部已啟用。
+
+## 共享詞庫與貢獻 / Shared lexicon and contributions
+
+- [核心詞 TXT](https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/lexicon/core.txt)：已啟用核心詞，一行一詞；
+- [強過濾詞 TXT](https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/lexicon/broad.txt)：已啟用短詞及強過濾詞，誤傷較高；
+- [全量審閱 TXT](https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/lexicon/review-all.txt)：全部候選，包含普通和學術用語，**不是預設屏蔽清單**；
+- [結構化 JSON](https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/lexicon/keywords.json)：可復用的分層、來源引用、日期與審核狀態；
+- [`lexicon/manifest.json`](lexicon/manifest.json)：版本、數量和檢查碼。
+
+這些 TXT 是文字詞庫，不是圈X域名規則，不能直接放入 `[filter_remote]`。其他工具可下載清單並自行實作文字匹配；圈X仍使用各平台 CONF。欄位規格及生成指令見 [`lexicon/README.md`](lexicon/README.md)。
+
+歡迎用[詞彙提案模板](https://github.com/Tedfaraday/quantumultx-extreme-feminism-filter/issues/new?template=keyword-proposal.md)或 PR 提交公開來源與誤傷說明，流程見 [`CONTRIBUTING.md`](CONTRIBUTING.md)。候選不會自動啟用，維護者需審核。新詞不能沿用舊資料的「來源待補」例外；舊詞中缺失逐詞定位的項目有明確標記，沒有捏造來源。
+
+共享範圍和第三方權利邊界見 [`lexicon/LICENSE.md`](lexicon/LICENSE.md)。共享詞庫不等於授權複製來源文章、截圖或個人資料。
 
 ## 詞彙來源 / Lexicon sources
 
@@ -152,6 +178,18 @@ QuantumultX/
   xhs-keyword-filter.conf          # 小紅書遠端重寫資源
   weibo-keyword-filter.conf        # 微博遠端重寫資源
   reddit-keyword-filter.conf       # Reddit 遠端重寫資源
+  pinned/v0.3.0/                  # 固定 v0.3.0 腳本快照入口
+lexicon/
+  keywords.json                   # 唯一詞庫維護入口
+  core.txt / broad.txt             # 已啟用詞的一行一詞共享匯出
+  review-all.txt                   # 全量候選匯出，不等於啟用詞庫
+  manifest.json                   # 版本、數量與檢查碼
+src/
+  adapters/                       # 不含詞庫陣列的平台邏輯範本
+  QuantumultX/                     # 介面規則範本
+tools/
+  build.js                        # 驗證、生成及一致性檢查
+  test.js                         # 完整本機測試入口
 Scripts/
   Xiaohongshu/
     xhs-keyword-filter.js          # 小紅書過濾邏輯與已啟用詞庫
@@ -164,10 +202,12 @@ docs/
   keywords-full-review.md          # 全量維護副本（Markdown）
   keywords-full-review.txt         # 全量維護副本（純文字）
 tests/
+  lexicon-test.js                  # 詞庫、來源與雙通道測試
   test.js                          # 小紅書本機回歸測試
   weibo-test.js                    # 微博本機回歸測試
   reddit-test.js                   # Reddit 本機回歸測試
 CHANGELOG.md
+CONTRIBUTING.md
 DATA_NOTICE.md
 LICENSE-CODE
 SOURCES.md

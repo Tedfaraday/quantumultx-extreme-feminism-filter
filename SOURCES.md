@@ -5,6 +5,9 @@
 | 公開儲存庫 | 本專案的參考用途 |
 | --- | --- |
 | [ddgksf2013/ddgksf2013](https://github.com/ddgksf2013/ddgksf2013) | Quantumult X 設定、重寫與腳本分發方式的研究參考 |
+| [Quantumult X 官方 sample.conf](https://github.com/crossutility/Quantumult-X/blob/master/sample.conf) | 遠端資源同步間隔、重寫與本機腳本 API 的核對 |
+| [GitHub Actions 官方工作流程文件](https://docs.github.com/en/actions/concepts/workflows-and-actions/workflows) | 詞庫變更後生成與驗證流程 |
+| [GitHub Actions token 文件](https://docs.github.com/en/actions/tutorials/authenticate-with-github_token) | PR 唯讀與 main 生成檔寫入的最小權限設計 |
 | [fmz200/wool_scripts](https://github.com/fmz200/wool_scripts) | 微博 Quantumult X 主機、介面路徑與 `statuses`／`items`／`cards` 回應包裝的技術研究參考 |
 | [zmqcherish/proxy-script](https://github.com/zmqcherish/proxy-script) | 微博主要 API 主機與卡片式回應結構的交叉核對 |
 | [Drelf2018/exp](https://github.com/Drelf2018/exp) | 微博 JSON 中 `text`、`text_raw`、`title.text` 與 `retweeted_status` 欄位的解析器交叉核對 |
@@ -29,4 +32,4 @@
 - 詞彙清單是為本機過濾與維護而整理的短詞、短語索引；它不是來源文章的鏡像，也不表示對任何詞義、人物或事件作出事實判定。
 - 本專案不是上述任一儲存庫的 Fork。除非另有明確標示，原創程式碼均為獨立實作。
 
-最後查閱日期：2026-09-24。
+平台介面參考最後查閱日期：2026-09-24；共享詞庫／更新流程技術文件查閱日期：2026-09-29。詞彙來源保留舊審核記錄，本次未重新核驗所有外部材料。

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "version": "0.4.0",
+  "updated_on": "2026-09-29",
+  "source_sha256": "0a1972c2fee1d8f9296e32a5322ec34f72c1775f23176456a23474f980b746c3",
+  "counts": {
+    "core": 207,
+    "broad": 68,
+    "enabled": 275,
+    "total": 1180
+  },
+  "files": {
+    "lexicon/core.txt": {
+      "sha256": "ad7f8d3b3ab2959dd43ff114b72802c50d8c702d278ec14d9f0aa652c1ac7558"
+    },
+    "lexicon/broad.txt": {
+      "sha256": "a26a9cc00f7fa77824915ae08636537268bae74be3c73464e39e77443b934f20"
+    },
+    "lexicon/review-all.txt": {
+      "sha256": "7b7849294740b567136512949abd1f1cfb9cdee7e2fbfe7fa32d4eec46f37ce3"
+    },
+    "Scripts/Xiaohongshu/xhs-keyword-filter.js": {
+      "sha256": "07836322989b9ff5fd399a19772354452562278afb99764aa68181a8458ddeaa"
+    },
+    "QuantumultX/xhs-keyword-filter.conf": {
+      "sha256": "1e5c7a93c2104a5584d4ce5ba874c587a047a1293882d2c27e39fd2a70d7663c"
+    },
+    "QuantumultX/pinned/v0.3.0/xhs-keyword-filter.conf": {
+      "sha256": "b7bbc3488314df7be77cc659f4959d1c693b83955645f232ad1122f0a8d5c043"
+    },
+    "Scripts/Weibo/weibo-keyword-filter.js": {
+      "sha256": "c0d42201d2a678ab702a742b8a3da865772a4dfc01ea40821b9d03b491e07a24"
+    },
+    "QuantumultX/weibo-keyword-filter.conf": {
+      "sha256": "cbe2b14c0a9e65d6b36883045600d996bcd3dce386b70ea91f6cb7906cc6dbdb"
+    },
+    "QuantumultX/pinned/v0.3.0/weibo-keyword-filter.conf": {
+      "sha256": "c143709f385e108bc95c35676e18f34e7fa5f91d5e94f03e9a30c3cfd9e82a39"
+    },
+    "Scripts/Reddit/reddit-keyword-filter.js": {
+      "sha256": "3fd28bc331b23c7a423fd028db113082d0a572e5a50bd7f686e4a4a962f88dce"
+    },
+    "QuantumultX/reddit-keyword-filter.conf": {
+      "sha256": "b1d15884489eb81a0ba8f75259e118ee73f4c5a1d44fe4ef4a6033574e9ef56e"
+    },
+    "QuantumultX/pinned/v0.3.0/reddit-keyword-filter.conf": {
+      "sha256": "84432c4258e1ade84b79b9d59d202e68e048d0bcefae574be4ac626c46a6935d"
+    }
+  }
+}

@@ -1,0 +1,1381 @@
+{
+  "origin_tag": "v0.3.0",
+  "note": "唯讀遷移憑據，不是詞庫維護入口。",
+  "entries": [
+    {
+      "id": "term-0001",
+      "term": "6b4t",
+      "tier": "core"
+    },
+    {
+      "id": "term-0002",
+      "term": "10bt",
+      "tier": "core"
+    },
+    {
+      "id": "term-0003",
+      "term": "100bt",
+      "tier": "core"
+    },
+    {
+      "id": "term-0004",
+      "term": "1000bt",
+      "tier": "core"
+    },
+    {
+      "id": "term-0005",
+      "term": "womad",
+      "tier": "core"
+    },
+    {
+      "id": "term-0006",
+      "term": "megalian",
+      "tier": "core"
+    },
+    {
+      "id": "term-0007",
+      "term": "婚驴",
+      "tier": "core"
+    },
+    {
+      "id": "term-0008",
+      "term": "胎器",
+      "tier": "core"
+    },
+    {
+      "id": "term-0009",
+      "term": "国蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0010",
+      "term": "蝈蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0011",
+      "term": "蜾蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0012",
+      "term": "蝻人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0013",
+      "term": "仨蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0014",
+      "term": "女权蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0015",
+      "term": "蝈蝻之光",
+      "tier": "core"
+    },
+    {
+      "id": "term-0016",
+      "term": "恶臭国蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0017",
+      "term": "小吊子",
+      "tier": "core"
+    },
+    {
+      "id": "term-0018",
+      "term": "小屌子",
+      "tier": "core"
+    },
+    {
+      "id": "term-0019",
+      "term": "蝻宝妈",
+      "tier": "core"
+    },
+    {
+      "id": "term-0020",
+      "term": "男宝妈",
+      "tier": "core"
+    },
+    {
+      "id": "term-0021",
+      "term": "精神蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0022",
+      "term": "媚蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0023",
+      "term": "平权仙",
+      "tier": "core"
+    },
+    {
+      "id": "term-0024",
+      "term": "平权仙子",
+      "tier": "core"
+    },
+    {
+      "id": "term-0025",
+      "term": "带屌跨性者",
+      "tier": "core"
+    },
+    {
+      "id": "term-0026",
+      "term": "女权教条",
+      "tier": "core"
+    },
+    {
+      "id": "term-0027",
+      "term": "女权籍",
+      "tier": "core"
+    },
+    {
+      "id": "term-0028",
+      "term": "女性专用价值观",
+      "tier": "core"
+    },
+    {
+      "id": "term-0029",
+      "term": "化粪池警告",
+      "tier": "core"
+    },
+    {
+      "id": "term-0030",
+      "term": "刻烟吸肺",
+      "tier": "core"
+    },
+    {
+      "id": "term-0031",
+      "term": "既视利益",
+      "tier": "core"
+    },
+    {
+      "id": "term-0032",
+      "term": "即视利益",
+      "tier": "core"
+    },
+    {
+      "id": "term-0033",
+      "term": "po尿",
+      "tier": "core"
+    },
+    {
+      "id": "term-0034",
+      "term": "po墨",
+      "tier": "core"
+    },
+    {
+      "id": "term-0035",
+      "term": "卖yin",
+      "tier": "core"
+    },
+    {
+      "id": "term-0036",
+      "term": "奴 li",
+      "tier": "core"
+    },
+    {
+      "id": "term-0037",
+      "term": "piao客",
+      "tier": "core"
+    },
+    {
+      "id": "term-0038",
+      "term": "si全家",
+      "tier": "core"
+    },
+    {
+      "id": "term-0039",
+      "term": "不沾吊",
+      "tier": "core"
+    },
+    {
+      "id": "term-0040",
+      "term": "远离男人不沾吊",
+      "tier": "core"
+    },
+    {
+      "id": "term-0041",
+      "term": "堕男胎",
+      "tier": "core"
+    },
+    {
+      "id": "term-0042",
+      "term": "不婚不育保平安",
+      "tier": "core"
+    },
+    {
+      "id": "term-0043",
+      "term": "三争三反",
+      "tier": "core"
+    },
+    {
+      "id": "term-0044",
+      "term": "争女性武力",
+      "tier": "core"
+    },
+    {
+      "id": "term-0045",
+      "term": "反子宫绑架",
+      "tier": "core"
+    },
+    {
+      "id": "term-0046",
+      "term": "独自高贵派",
+      "tier": "core"
+    },
+    {
+      "id": "term-0047",
+      "term": "脱腐脱宅",
+      "tier": "core"
+    },
+    {
+      "id": "term-0048",
+      "term": "向下自由",
+      "tier": "core"
+    },
+    {
+      "id": "term-0049",
+      "term": "训夫模范",
+      "tier": "core"
+    },
+    {
+      "id": "term-0050",
+      "term": "父权洗脑",
+      "tier": "core"
+    },
+    {
+      "id": "term-0051",
+      "term": "y病毒",
+      "tier": "core"
+    },
+    {
+      "id": "term-0052",
+      "term": "性缘分离",
+      "tier": "core"
+    },
+    {
+      "id": "term-0053",
+      "term": "不沾男",
+      "tier": "core"
+    },
+    {
+      "id": "term-0054",
+      "term": "女本位",
+      "tier": "core"
+    },
+    {
+      "id": "term-0055",
+      "term": "精神女人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0056",
+      "term": "行走子宫",
+      "tier": "core"
+    },
+    {
+      "id": "term-0057",
+      "term": "开除女籍",
+      "tier": "core"
+    },
+    {
+      "id": "term-0058",
+      "term": "原谅宝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0059",
+      "term": "扶贫怪",
+      "tier": "core"
+    },
+    {
+      "id": "term-0060",
+      "term": "女拳师",
+      "tier": "core"
+    },
+    {
+      "id": "term-0061",
+      "term": "拳媛",
+      "tier": "core"
+    },
+    {
+      "id": "term-0062",
+      "term": "女权媛",
+      "tier": "core"
+    },
+    {
+      "id": "term-0063",
+      "term": "男蛆",
+      "tier": "core"
+    },
+    {
+      "id": "term-0064",
+      "term": "蝻窝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0065",
+      "term": "下头男",
+      "tier": "core"
+    },
+    {
+      "id": "term-0066",
+      "term": "爱屌女",
+      "tier": "core"
+    },
+    {
+      "id": "term-0067",
+      "term": "拜吊小作家",
+      "tier": "core"
+    },
+    {
+      "id": "term-0068",
+      "term": "女权妈",
+      "tier": "core"
+    },
+    {
+      "id": "term-0069",
+      "term": "女权b",
+      "tier": "core"
+    },
+    {
+      "id": "term-0070",
+      "term": "mansplaining",
+      "tier": "core"
+    },
+    {
+      "id": "term-0071",
+      "term": "radfem",
+      "tier": "core"
+    },
+    {
+      "id": "term-0072",
+      "term": "国蝻集体灭绝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0073",
+      "term": "蝈蝻集体灭绝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0074",
+      "term": "杀光99%蝻人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0075",
+      "term": "中国男人就是该灭绝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0076",
+      "term": "男人都该死绝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0077",
+      "term": "不杀一批男人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0078",
+      "term": "杀光中国男人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0079",
+      "term": "杀个两亿中国男人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0080",
+      "term": "杀光所有男人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0081",
+      "term": "想杀男人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0082",
+      "term": "只杀男",
+      "tier": "core"
+    },
+    {
+      "id": "term-0083",
+      "term": "男的垃圾",
+      "tier": "core"
+    },
+    {
+      "id": "term-0084",
+      "term": "男人垃圾",
+      "tier": "core"
+    },
+    {
+      "id": "term-0085",
+      "term": "男性之恶",
+      "tier": "core"
+    },
+    {
+      "id": "term-0086",
+      "term": "低等生物",
+      "tier": "core"
+    },
+    {
+      "id": "term-0087",
+      "term": "劣等生物",
+      "tier": "core"
+    },
+    {
+      "id": "term-0088",
+      "term": "地球之癌",
+      "tier": "core"
+    },
+    {
+      "id": "term-0089",
+      "term": "骟死他们",
+      "tier": "core"
+    },
+    {
+      "id": "term-0090",
+      "term": "男宝与男宝妈在天堂",
+      "tier": "core"
+    },
+    {
+      "id": "term-0091",
+      "term": "大郎雌激素",
+      "tier": "core"
+    },
+    {
+      "id": "term-0092",
+      "term": "-÷",
+      "tier": "core"
+    },
+    {
+      "id": "term-0093",
+      "term": "♂÷",
+      "tier": "core"
+    },
+    {
+      "id": "term-0094",
+      "term": "滑蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0095",
+      "term": "支家哥",
+      "tier": "core"
+    },
+    {
+      "id": "term-0096",
+      "term": "小茶壶",
+      "tier": "core"
+    },
+    {
+      "id": "term-0097",
+      "term": "易碎是茶壶的天性",
+      "tier": "core"
+    },
+    {
+      "id": "term-0098",
+      "term": "女男关系",
+      "tier": "core"
+    },
+    {
+      "id": "term-0099",
+      "term": "劣等y染",
+      "tier": "core"
+    },
+    {
+      "id": "term-0100",
+      "term": "吊子",
+      "tier": "core"
+    },
+    {
+      "id": "term-0101",
+      "term": "一拳打死蝻宝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0102",
+      "term": "小仙男",
+      "tier": "core"
+    },
+    {
+      "id": "term-0103",
+      "term": "骟蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0104",
+      "term": "纯血激女",
+      "tier": "core"
+    },
+    {
+      "id": "term-0105",
+      "term": "y染屠杀",
+      "tier": "core"
+    },
+    {
+      "id": "term-0106",
+      "term": "劣精灭绝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0107",
+      "term": "鉴鸡蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0108",
+      "term": "支蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0109",
+      "term": "劣等滑蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0110",
+      "term": "吊国男宝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0111",
+      "term": "活体蝻样本",
+      "tier": "core"
+    },
+    {
+      "id": "term-0112",
+      "term": "以死爆金币",
+      "tier": "core"
+    },
+    {
+      "id": "term-0113",
+      "term": "撕蛋剪吊暴死",
+      "tier": "core"
+    },
+    {
+      "id": "term-0114",
+      "term": "蝻本位",
+      "tier": "core"
+    },
+    {
+      "id": "term-0115",
+      "term": "男权教条主义",
+      "tier": "core"
+    },
+    {
+      "id": "term-0116",
+      "term": "吊缘关系",
+      "tier": "core"
+    },
+    {
+      "id": "term-0117",
+      "term": "男税",
+      "tier": "core"
+    },
+    {
+      "id": "term-0118",
+      "term": "男役",
+      "tier": "core"
+    },
+    {
+      "id": "term-0119",
+      "term": "女性天然主宰",
+      "tier": "core"
+    },
+    {
+      "id": "term-0120",
+      "term": "雌性主宰",
+      "tier": "core"
+    },
+    {
+      "id": "term-0121",
+      "term": "爱蝻失职",
+      "tier": "core"
+    },
+    {
+      "id": "term-0122",
+      "term": "双标精分蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0123",
+      "term": "男本位伪女权",
+      "tier": "core"
+    },
+    {
+      "id": "term-0124",
+      "term": "女性润学",
+      "tier": "core"
+    },
+    {
+      "id": "term-0125",
+      "term": "润学女性",
+      "tier": "core"
+    },
+    {
+      "id": "term-0126",
+      "term": "雌润女",
+      "tier": "core"
+    },
+    {
+      "id": "term-0127",
+      "term": "等驴",
+      "tier": "core"
+    },
+    {
+      "id": "term-0128",
+      "term": "粉红驴",
+      "tier": "core"
+    },
+    {
+      "id": "term-0129",
+      "term": "女强驴",
+      "tier": "core"
+    },
+    {
+      "id": "term-0130",
+      "term": "织驴",
+      "tier": "core"
+    },
+    {
+      "id": "term-0131",
+      "term": "驴里驴气",
+      "tier": "core"
+    },
+    {
+      "id": "term-0132",
+      "term": "茶壶嘴",
+      "tier": "core"
+    },
+    {
+      "id": "term-0133",
+      "term": "y基因bug",
+      "tier": "core"
+    },
+    {
+      "id": "term-0134",
+      "term": "蝻原罪",
+      "tier": "core"
+    },
+    {
+      "id": "term-0135",
+      "term": "男宝潜力股",
+      "tier": "core"
+    },
+    {
+      "id": "term-0136",
+      "term": "沾蝻女性",
+      "tier": "core"
+    },
+    {
+      "id": "term-0137",
+      "term": "驴人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0138",
+      "term": "托举蝻宝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0139",
+      "term": "织男孽种",
+      "tier": "core"
+    },
+    {
+      "id": "term-0140",
+      "term": "天道图支",
+      "tier": "core"
+    },
+    {
+      "id": "term-0141",
+      "term": "女人天性屠y",
+      "tier": "core"
+    },
+    {
+      "id": "term-0142",
+      "term": "男本位寄生虫",
+      "tier": "core"
+    },
+    {
+      "id": "term-0143",
+      "term": "y染优越",
+      "tier": "core"
+    },
+    {
+      "id": "term-0144",
+      "term": "劣精全活",
+      "tier": "core"
+    },
+    {
+      "id": "term-0145",
+      "term": "男本位牌坊",
+      "tier": "core"
+    },
+    {
+      "id": "term-0146",
+      "term": "穷丑男宝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0147",
+      "term": "妻母非母",
+      "tier": "core"
+    },
+    {
+      "id": "term-0148",
+      "term": "亲亲老蚣",
+      "tier": "core"
+    },
+    {
+      "id": "term-0149",
+      "term": "织蝻锁死",
+      "tier": "core"
+    },
+    {
+      "id": "term-0150",
+      "term": "老蝻人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0151",
+      "term": "劣米青",
+      "tier": "core"
+    },
+    {
+      "id": "term-0152",
+      "term": "蜘蛛小黄人",
+      "tier": "core"
+    },
+    {
+      "id": "term-0153",
+      "term": "脚刹y染",
+      "tier": "core"
+    },
+    {
+      "id": "term-0154",
+      "term": "跪舔小屌",
+      "tier": "core"
+    },
+    {
+      "id": "term-0155",
+      "term": "润学婧髓",
+      "tier": "core"
+    },
+    {
+      "id": "term-0156",
+      "term": "脂蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0157",
+      "term": "蜘蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0158",
+      "term": "织蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0159",
+      "term": "劣雄",
+      "tier": "core"
+    },
+    {
+      "id": "term-0160",
+      "term": "脚刹滑蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0161",
+      "term": "图尽v染",
+      "tier": "core"
+    },
+    {
+      "id": "term-0162",
+      "term": "不踩死男人的女权",
+      "tier": "core"
+    },
+    {
+      "id": "term-0163",
+      "term": "蝻人最佳归宿",
+      "tier": "core"
+    },
+    {
+      "id": "term-0164",
+      "term": "男性最佳归宿",
+      "tier": "core"
+    },
+    {
+      "id": "term-0165",
+      "term": "接老公车祸",
+      "tier": "core"
+    },
+    {
+      "id": "term-0166",
+      "term": "接男友暴毙",
+      "tier": "core"
+    },
+    {
+      "id": "term-0167",
+      "term": "男本位谎言",
+      "tier": "core"
+    },
+    {
+      "id": "term-0168",
+      "term": "润学信条",
+      "tier": "core"
+    },
+    {
+      "id": "term-0169",
+      "term": "润学娇妻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0170",
+      "term": "雄配子载体",
+      "tier": "core"
+    },
+    {
+      "id": "term-0171",
+      "term": "啃女利蝻",
+      "tier": "core"
+    },
+    {
+      "id": "term-0172",
+      "term": "娇妻英雌",
+      "tier": "core"
+    },
+    {
+      "id": "term-0173",
+      "term": "利男辱女",
+      "tier": "core"
+    },
+    {
+      "id": "term-0174",
+      "term": "织家种",
+      "tier": "core"
+    },
+    {
+      "id": "term-0175",
+      "term": "驴脑",
+      "tier": "core"
+    },
+    {
+      "id": "term-0176",
+      "term": "恋丑织",
+      "tier": "core"
+    },
+    {
+      "id": "term-0177",
+      "term": "雄堕驴",
+      "tier": "core"
+    },
+    {
+      "id": "term-0178",
+      "term": "琐男",
+      "tier": "core"
+    },
+    {
+      "id": "term-0179",
+      "term": "锁男",
+      "tier": "core"
+    },
+    {
+      "id": "term-0180",
+      "term": "让多数雄性去死",
+      "tier": "core"
+    },
+    {
+      "id": "term-0181",
+      "term": "吃掉雄性",
+      "tier": "core"
+    },
+    {
+      "id": "term-0182",
+      "term": "踩在雄性头顶",
+      "tier": "core"
+    },
+    {
+      "id": "term-0183",
+      "term": "女性是本体",
+      "tier": "core"
+    },
+    {
+      "id": "term-0184",
+      "term": "原始女利",
+      "tier": "core"
+    },
+    {
+      "id": "term-0185",
+      "term": "拳老师",
+      "tier": "core"
+    },
+    {
+      "id": "term-0186",
+      "term": "拳太祖",
+      "tier": "core"
+    },
+    {
+      "id": "term-0187",
+      "term": "拳大帝",
+      "tier": "core"
+    },
+    {
+      "id": "term-0188",
+      "term": "拳魔",
+      "tier": "core"
+    },
+    {
+      "id": "term-0189",
+      "term": "拳神",
+      "tier": "core"
+    },
+    {
+      "id": "term-0190",
+      "term": "撕蛋剪吊",
+      "tier": "core"
+    },
+    {
+      "id": "term-0191",
+      "term": "剪吊暴死",
+      "tier": "core"
+    },
+    {
+      "id": "term-0192",
+      "term": "屠y染",
+      "tier": "core"
+    },
+    {
+      "id": "term-0193",
+      "term": "撕烂你的蛋",
+      "tier": "core"
+    },
+    {
+      "id": "term-0194",
+      "term": "一剪子帮您噶掉",
+      "tier": "core"
+    },
+    {
+      "id": "term-0195",
+      "term": "剪下鸡儿",
+      "tier": "core"
+    },
+    {
+      "id": "term-0196",
+      "term": "打死对应的男性",
+      "tier": "core"
+    },
+    {
+      "id": "term-0197",
+      "term": "把女婿打死",
+      "tier": "core"
+    },
+    {
+      "id": "term-0198",
+      "term": "neng死他",
+      "tier": "core"
+    },
+    {
+      "id": "term-0199",
+      "term": "随便下点药给他送走",
+      "tier": "core"
+    },
+    {
+      "id": "term-0200",
+      "term": "男性耗材",
+      "tier": "core"
+    },
+    {
+      "id": "term-0201",
+      "term": "耗材的耗材",
+      "tier": "core"
+    },
+    {
+      "id": "term-0202",
+      "term": "男屁民",
+      "tier": "core"
+    },
+    {
+      "id": "term-0203",
+      "term": "真下头",
+      "tier": "core"
+    },
+    {
+      "id": "term-0204",
+      "term": "男疾男户",
+      "tier": "core"
+    },
+    {
+      "id": "term-0205",
+      "term": "大螂喝药",
+      "tier": "core"
+    },
+    {
+      "id": "term-0206",
+      "term": "小线头",
+      "tier": "core"
+    },
+    {
+      "id": "term-0207",
+      "term": "骟男",
+      "tier": "core"
+    },
+    {
+      "id": "term-0208",
+      "term": "蝻",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0209",
+      "term": "蛆",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0210",
+      "term": "骟",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0211",
+      "term": "屌",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0212",
+      "term": "婚女",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0213",
+      "term": "男宝",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0214",
+      "term": "女爹",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0215",
+      "term": "娇妻",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0216",
+      "term": "仙子",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0217",
+      "term": "普信男",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0218",
+      "term": "白瘦幼",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0219",
+      "term": "理中客",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0220",
+      "term": "媚男",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0221",
+      "term": "男凝",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0222",
+      "term": "厌男",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0223",
+      "term": "厌女",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0224",
+      "term": "仇女",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0225",
+      "term": "恐男",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0226",
+      "term": "雌竞",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0227",
+      "term": "反婚",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0228",
+      "term": "反育",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0229",
+      "term": "反孝",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0230",
+      "term": "脱腐",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0231",
+      "term": "脱宅",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0232",
+      "term": "父权",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0233",
+      "term": "男权",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0234",
+      "term": "女拳",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0235",
+      "term": "男拳",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0236",
+      "term": "打拳",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0237",
+      "term": "拳师",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0238",
+      "term": "爹味",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0239",
+      "term": "男德",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0240",
+      "term": "女德",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0241",
+      "term": "婵婵",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0242",
+      "term": "鉴权",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0243",
+      "term": "基女",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0244",
+      "term": "激女",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0245",
+      "term": "女利",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0246",
+      "term": "莮",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0247",
+      "term": "阉",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0248",
+      "term": "支男",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0249",
+      "term": "织男",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0250",
+      "term": "英雌",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0251",
+      "term": "大爹",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0252",
+      "term": "雄堕",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0253",
+      "term": "劣精",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0254",
+      "term": "男本位",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0255",
+      "term": "y染",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0256",
+      "term": "v染",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0257",
+      "term": "利蝻",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0258",
+      "term": "拜吊",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0259",
+      "term": "爱蝻",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0260",
+      "term": "婚人",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0261",
+      "term": "雄竞",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0262",
+      "term": "雄竟",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0263",
+      "term": "母父",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0264",
+      "term": "女伥",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0265",
+      "term": "润女",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0266",
+      "term": "滑男",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0267",
+      "term": "碰雌",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0268",
+      "term": "屠y",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0269",
+      "term": "性缘至上",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0270",
+      "term": "牌坊精",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0271",
+      "term": "老吊子",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0272",
+      "term": "性缘脑",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0273",
+      "term": "性缘女",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0274",
+      "term": "利男",
+      "tier": "broad"
+    },
+    {
+      "id": "term-0275",
+      "term": "雌性智慧",
+      "tier": "broad"
+    }
+  ]
+}

@@ -47,7 +47,7 @@ jobs:
           node tools/test.js
       - name: Commit only generated artifacts if changed
         run: |
-          git add -- lexicon/core.txt lexicon/broad.txt lexicon/review-all.txt lexicon/manifest.json Scripts/Xiaohongshu/xhs-keyword-filter.js Scripts/Weibo/weibo-keyword-filter.js Scripts/Reddit/reddit-keyword-filter.js QuantumultX/xhs-keyword-filter.conf QuantumultX/weibo-keyword-filter.conf QuantumultX/reddit-keyword-filter.conf QuantumultX/pinned/v0.3.0/xhs-keyword-filter.conf QuantumultX/pinned/v0.3.0/weibo-keyword-filter.conf QuantumultX/pinned/v0.3.0/reddit-keyword-filter.conf
+          git add -- lexicon/core.txt lexicon/broad.txt lexicon/review-all.txt lexicon/manifest.json Imports/Threads/core.txt Imports/Threads/broad.txt Imports/Threads/combined.txt Imports/Threads/copy-paste.md Scripts/Xiaohongshu/xhs-keyword-filter.js Scripts/Weibo/weibo-keyword-filter.js Scripts/Reddit/reddit-keyword-filter.js QuantumultX/xhs-keyword-filter.conf QuantumultX/weibo-keyword-filter.conf QuantumultX/reddit-keyword-filter.conf QuantumultX/pinned/v0.3.0/xhs-keyword-filter.conf QuantumultX/pinned/v0.3.0/weibo-keyword-filter.conf QuantumultX/pinned/v0.3.0/reddit-keyword-filter.conf
           if git diff --cached --quiet; then
             echo "Generated artifacts already up to date."
             exit 0

@@ -9,6 +9,7 @@
 | [`broad.txt`](broad.txt) | 已啟用強過濾詞，一行一詞；誤傷較高 |
 | [`review-all.txt`](review-all.txt) | 全量審閱候選，保留大小寫變體；不是預設啟用清單 |
 | [`manifest.json`](manifest.json) | 詞庫版本、數量與 SHA-256 檢查碼 |
+| [`../Imports/Threads/`](../Imports/Threads/README.md) | Threads 原生 Hidden Words 手動導入版：逗號分隔核心／強過濾／合併詞庫及分批複製頁；非圈X規則 |
 | [`legacy-baseline.json`](legacy-baseline.json) | v0.3.0 的 275 個啟用詞遷移憑據，唯讀，不是維護入口 |
 
 TXT 是 UTF-8 純文字，每行一詞，沒有標題或註解。它們不是 Quantumult X 的域名分流清單，不能直接放入 `[filter_remote]`；其他工具需自行實作文字包含匹配。圈X使用者仍訂閱平台 CONF。
@@ -43,7 +44,9 @@ node tools/test.js
 node tools/build.js --check
 ```
 
-詞庫只改 `keywords.json`；平台處理邏輯改 `src/adapters/`，介面規則改 `src/QuantumultX/`。`Scripts/`、`QuantumultX/`、三份 TXT 與 manifest 都是生成檔，手改會在下次生成時被覆蓋。`tools/migrate-legacy.js` 是一次性遷移工具，已有詞庫時拒絕執行，不是日常更新入口。
+詞庫只改 `keywords.json`；平台處理邏輯改 `src/adapters/`，介面規則改 `src/QuantumultX/`。`Scripts/`、`QuantumultX/`、三份共享 TXT、Threads 的三份導入 TXT／`copy-paste.md` 與 manifest 都是生成檔，手改會在下次生成時被覆蓋。`tools/migrate-legacy.js` 是一次性遷移工具，已有詞庫時拒絕執行，不是日常更新入口。
+
+Threads 匯出只選已啟用詞，不包含全量審閱候選。英文逗號分隔供手動複製貼上；分批大小不是官方限制。新詞若含逗號、分號或程式碼框符號，建置會拒絕，避免錯拆成多詞。倉庫可自動重新生成，但手機上的 Threads 設定不會自動同步。
 
 GitHub Actions 在 PR 中只生成與測試，不會啟用或合併提案。在已審核變更進入 `main` 後，工作流程重新生成、測試並提交變動的生成檔；無變動不會提交。若倉庫政策禁止 bot 寫入 `main`，維護者可本機生成後提交，無需放寬帳號或分支安全設定。
 

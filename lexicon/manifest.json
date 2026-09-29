@@ -9,6 +9,14 @@
     "enabled": 275,
     "total": 1180
   },
+  "imports": {
+    "threads": {
+      "mode": "native-hidden-words-manual",
+      "batch_size": 25,
+      "auto_sync": false,
+      "device_verified": false
+    }
+  },
   "files": {
     "lexicon/core.txt": {
       "sha256": "ad7f8d3b3ab2959dd43ff114b72802c50d8c702d278ec14d9f0aa652c1ac7558"
@@ -18,6 +26,18 @@
     },
     "lexicon/review-all.txt": {
       "sha256": "7b7849294740b567136512949abd1f1cfb9cdee7e2fbfe7fa32d4eec46f37ce3"
+    },
+    "Imports/Threads/core.txt": {
+      "sha256": "3c0c66917a237b34f15b93c2af7e18a4da7fc6da1eb1b6e6411d757acf32999b"
+    },
+    "Imports/Threads/broad.txt": {
+      "sha256": "7bc722d3c1cd890d47bb67cc25d3dfa0b03e8a4aaecb9d4bc3fed477064415ae"
+    },
+    "Imports/Threads/combined.txt": {
+      "sha256": "0c5fbf736e9e999c2f81266e6593043bc564851f63327f7e2dfc47932bfa1481"
+    },
+    "Imports/Threads/copy-paste.md": {
+      "sha256": "95d046c00d538016b96c9b7655274b17dc1862be5571f488005fb9ca343d392b"
     },
     "Scripts/Xiaohongshu/xhs-keyword-filter.js": {
       "sha256": "07836322989b9ff5fd399a19772354452562278afb99764aa68181a8458ddeaa"

@@ -2,9 +2,13 @@
 
 基於 Quantumult X 的極端女權言論關鍵詞屏蔽工具，用於減少中文網路資訊流中極端女權、性別仇恨、男性貶損及暴力／滅絕性表達對使用者的影響。工具只在本機檢查回應內明確存在的貼文標題、正文／簡介與標籤；命中已啟用關鍵詞時，只從該次回應中移除相應貼文。
 
+另提供 [Threads 專用原生「隱藏字詞」導入詞庫](Imports/Threads/README.md)：手動複製貼上，無需圈X或 MitM；原生過濾由 Threads 處理，不是回應重寫，也不會從 GitHub 自動同步手機詞庫。
+
 本專案所稱「極端女權言論」，僅指包含性別仇恨、人格貶損或暴力／滅絕表達的具體文字，不指向女性、女權主義者或任何真實個人、帳號與組織。詞彙被收錄只代表它是過濾候選，不構成對任何人的身分、立場或行為判定。
 
 A Quantumult X keyword filter designed to reduce exposure to extreme feminist speech, gender-based hostility, anti-male derogatory language, and violent or eliminationist expressions in Chinese-language content feeds. It examines only explicit text fields in responses—such as post titles, bodies/descriptions, and tags—and removes matching posts from that response locally.
+
+Separate [Threads native Hidden Words imports](Imports/Threads/README.md) are available for manual copy/paste. They are not Quantumult X adapters and do not automatically sync to your device.
 
 In this project, “extreme feminist speech” refers only to specific text containing gender-based hostility, personal degradation, or violent/eliminationist expressions. It does not designate women, feminists, or any real person, account, or organization. Inclusion in the lexicon is not a factual judgment about anyone's identity, beliefs, or conduct.
 
@@ -15,9 +19,9 @@ In this project, “extreme feminist speech” refers only to specific text cont
 
 ## 支援狀態 / Support status
 
-目前提供小紅書適配器、微博初步適配器與 Reddit 初步適配器；知乎、百度貼吧與抖音仍只保留未來適配位置。
+目前提供小紅書適配器、微博初步適配器與 Reddit 初步適配器；另外提供 Threads 原生隱藏字詞的手動導入詞庫（非圈X適配器）。知乎、百度貼吧與抖音仍只保留未來適配位置。
 
-The Xiaohongshu adapter, an initial Weibo adapter, and an initial Reddit adapter are available. Zhihu, Baidu Tieba, and Douyin remain placeholders for future work.
+The Xiaohongshu adapter, an initial Weibo adapter, and an initial Reddit adapter are available, alongside a manual Threads native Hidden Words lexicon (not a Quantumult X adapter). Zhihu, Baidu Tieba, and Douyin remain placeholders for future work.
 
 | 應用 / App | 狀態 / Status | 目前範圍 / Current scope |
 |---|---|---|
@@ -27,6 +31,13 @@ The Xiaohongshu adapter, an initial Weibo adapter, and an initial Reddit adapter
 | 百度貼吧 / Baidu Tieba | ⏳ 預留 / Placeholder | 尚未發佈適配器 / No adapter published |
 | 抖音 / Douyin | 🔬 技術預留 / Technical placeholder | 只在能取得穩定、可改寫的明文回應時考慮適配 / Considered only if stable, rewritable plaintext responses are available |
 | Reddit | 🧪 初步支援 / Initial support | iOS App 的 Home、Subreddit、Popular、News GraphQL 資訊流；僅比對帖子標題、正文預覽與貼文 flair，尚待當前 App 版本真機驗證 / Selected iOS GraphQL feeds; post titles, body previews and post flairs; current-app device verification pending |
+| Threads | 📋 原生字詞庫 / Native lexicon | [Hidden Words 手動導入](Imports/Threads/README.md)；非圈X規則、無自動同步，尚待當前 App 版本真機驗證 / Manual native import, no automatic sync; device verification pending |
+
+## Threads 字詞庫導入（非圈X）/ Threads native import
+
+從 [Threads 分批複製頁](Imports/Threads/copy-paste.md) 開始：核心詞先選，可選強過濾詞誤傷較高；[合併版](Imports/Threads/combined.txt) 只含全部已啟用詞，不包含全量審閱候選。請按 [專用說明](Imports/Threads/README.md) 在 Threads 自訂隱藏字詞介面貼上，確認逗號分隔內容被拆成獨立詞項。不接受批量時改為逐詞新增。
+
+**這不是官方設定檔匯入格式，不能加入圈X的 `[rewrite_remote]` 或 `[filter_remote]`。**每批 25 詞只是便於複製，不是官方上限；GitHub 更新後仍需手動維護 Threads 的詞項。以下圈X安裝步驟只適用於小紅書、微博和 Reddit。
 
 ## 安裝與自動更新 / Installation and automatic updates
 
@@ -118,6 +129,8 @@ Reddit 適配器只處理 `gql-fed.reddit.com/` 上指定的 SDUI 資訊流操�
 
 三個適配器的詞庫統一從 [`lexicon/keywords.json`](lexicon/keywords.json) 生成。只需維護這一份來源資料，GitHub Actions 會在已審核的更新進入 `main` 後生成三份單檔腳本及共享 TXT。腳本仍在本機使用內嵌詞庫，不會每次讀帖都下載詞庫；資料不會回傳。平台邏輯請改 `src/adapters/`，不要手改生成的 `Scripts/`。
 
+Threads 的逗號分隔詞庫與分批複製頁也從同一 JSON 的已啟用詞生成；不會額外啟用候選、不另建獨立詞源、不改變原有圈X腳本行為。原生 Threads 匹配由平台決定，不保證與腳本匹配一致。
+
 匹配採用規範化後的字串包含判斷，而不是分詞、語意分類或立場辨識。因此：
 
 - 同一詞出現在引用、反駁、批評、新聞轉述或學術討論中，也可能被過濾；
@@ -129,6 +142,7 @@ Reddit 適配器只處理 `gql-fed.reddit.com/` 上指定的 SDUI 資訊流操�
 
 ## 共享詞庫與貢獻 / Shared lexicon and contributions
 
+- [Threads 專用導入詞庫](Imports/Threads/README.md)：原生 Hidden Words 手動複製貼上格式，附分批頁與來源，不是圈X訂閱；
 - [核心詞 TXT](https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/lexicon/core.txt)：已啟用核心詞，一行一詞；
 - [強過濾詞 TXT](https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/lexicon/broad.txt)：已啟用短詞及強過濾詞，誤傷較高；
 - [全量審閱 TXT](https://raw.githubusercontent.com/Tedfaraday/quantumultx-extreme-feminism-filter/main/lexicon/review-all.txt)：全部候選，包含普通和學術用語，**不是預設屏蔽清單**；
@@ -179,6 +193,10 @@ QuantumultX/
   weibo-keyword-filter.conf        # 微博遠端重寫資源
   reddit-keyword-filter.conf       # Reddit 遠端重寫資源
   pinned/v0.3.0/                  # 固定 v0.3.0 腳本快照入口
+Imports/
+  Threads/                        # 原生隱藏字詞：手動導入，非圈X規則
+    README.md / copy-paste.md      # 導入說明與分批複製頁
+    core.txt / broad.txt / combined.txt # 逗號分隔字詞，無自動同步
 lexicon/
   keywords.json                   # 唯一詞庫維護入口
   core.txt / broad.txt             # 已啟用詞的一行一詞共享匯出
@@ -221,6 +239,7 @@ SOURCES.md
 - [`Scripts/Weibo/weibo-keyword-filter.js`](Scripts/Weibo/weibo-keyword-filter.js)：微博過濾邏輯與關鍵詞設定；
 - [`QuantumultX/reddit-keyword-filter.conf`](QuantumultX/reddit-keyword-filter.conf)：Reddit Quantumult X 重寫規則；
 - [`Scripts/Reddit/reddit-keyword-filter.js`](Scripts/Reddit/reddit-keyword-filter.js)：Reddit 資訊流過濾邏輯與關鍵詞設定；
+- [`Imports/Threads/README.md`](Imports/Threads/README.md)：Threads 原生隱藏字詞導入說明、複製詞庫與來源；
 - [`docs/KEYWORD_SOURCES.md`](docs/KEYWORD_SOURCES.md)：公開材料來源與取捨；
 - [`DATA_NOTICE.md`](DATA_NOTICE.md)：資料與第三方材料聲明；
 - [`SOURCES.md`](SOURCES.md)：參考來源索引；
@@ -255,6 +274,10 @@ SOURCES.md
 初步適配 iOS App 經 `gql-fed.reddit.com/` 取得的 Home、Subreddit、Popular 與 News SDUI 資訊流。腳本只處理 `X-Apollo-Operation-Name` 為 `HomeFeedSdui`、`SubredditFeedSdui`、`PopularFeedSdui` 或 `NewsFeedSdui` 的回應。可辨識的 `CellGroup` 貼文命中標題、正文預覽或貼文 flair 時，從當次列表中移除該貼文；完整正文、評論、搜尋結果、單帖詳情與其他操作不在目前範圍內。
 
 此適配器已有人工 GraphQL JSON 回歸測試，尚未在使用者目前的 Reddit iOS 版本上真機驗證。若 Quantumult X 未取得可解析的 JSON、操作名稱或結構不符，腳本會原樣放行。若真機測試發現回應格式變更，請只提供脫敏後的操作名稱與結構，不要提交原始回應或憑證。
+
+### Threads（原生隱藏字詞，手動導入）
+
+提供 [專用導入詞庫](Imports/Threads/README.md) 與 [分批複製頁](Imports/Threads/copy-paste.md)，使用 Threads 自帶 Hidden Words，不是 Quantumult X 回應適配器。核心、可選強過濾與合併版均沿用主詞庫的已啟用詞；原生匹配、容量及實際介面以當前 App 為準，尚待真機驗證。沒有 Threads CONF／JS，也沒有手機端 GitHub 自動詞庫同步功能。
 
 ## 除錯
 
